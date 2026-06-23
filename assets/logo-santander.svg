@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" width="200" height="40">
-  <!-- Flame icon -->
-  <path d="M18 8c-1.5 2-2.5 4.5-2.5 7 0 4.5 3.5 8 8 8s8-3.5 8-8c0-2.5-1-5-2.5-7-1 1.5-2 3.5-2 5.5 0 2.5-2 4.5-4.5 4.5S18.5 16 18.5 13.5c0-2 -0.5-4-0.5-5.5z" fill="#EC0000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50">
+  <!-- Llama de Santander -->
+  <g transform="translate(5, 10)">
+    <path d="M15 5 C13 8, 11 12, 11 16 C11 22, 15.5 27, 21 27 C26.5 27, 31 22, 31 16 C31 12, 29 8, 27 5 C26 7, 25 10, 25 13 C25 17, 22 20, 18.5 20 C15 20, 12 17, 12 13 C12 10, 11.5 7, 11 5 Z" fill="#EC0000"/>
+  </g>
   
-  <!-- Santander text -->
-  <text x="35" y="16" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#EC0000">Santander</text>
+  <!-- Texto Santander -->
+  <text x="45" y="24" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#EC0000" letter-spacing="0.5">Santander</text>
   
-  <!-- Consumer Bank text -->
-  <text x="35" y="28" font-family="Arial, sans-serif" font-size="10" fill="#EC0000">Consumer Bank</text>
+  <!-- Texto Consumer Bank -->
+  <text x="45" y="38" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#EC0000">Consumer Bank</text>
 </svg>
