@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" width="200" height="40">
+  <!-- Flame icon -->
+  <path d="M18 8c-1.5 2-2.5 4.5-2.5 7 0 4.5 3.5 8 8 8s8-3.5 8-8c0-2.5-1-5-2.5-7-1 1.5-2 3.5-2 5.5 0 2.5-2 4.5-4.5 4.5S18.5 16 18.5 13.5c0-2 -0.5-4-0.5-5.5z" fill="#EC0000"/>
+  
+  <!-- Santander text -->
+  <text x="35" y="16" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#EC0000">Santander</text>
+  
+  <!-- Consumer Bank text -->
+  <text x="35" y="28" font-family="Arial, sans-serif" font-size="10" fill="#EC0000">Consumer Bank</text>
+</svg>
