@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Documentación · Labour Check</title>
+<style>
+:root{--red:#e4002b;--ink:#1e1e24;--muted:#62626f;--bg:#f6f4f2;--card:#fff;--line:#e8e2df;--soft:#fff7f8;--shadow:0 20px 60px rgba(31,31,37,.12);--radius:28px;--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:var(--font);background:#fff;color:var(--ink);line-height:1.6;scroll-behavior:smooth}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:20px 0}
+.header-content{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.02em;font-size:18px;text-decoration:none;color:var(--ink)}
+.brandmark{width:40px;height:40px;border-radius:12px;background:var(--red);display:grid;place-items:center;color:#fff;font-weight:900;font-size:18px}
+.back-btn{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 20px;text-decoration:none;color:var(--ink);font-weight:600;font-size:14px;transition:all .2s}
+.back-btn:hover{background:var(--red);color:#fff;border-color:var(--red)}
+section{max-width:1200px;margin:0 auto;padding:80px 40px}
+.hero{text-align:center;padding:80px 40px;background:radial-gradient(circle at 50% 0%,#fff 0,#f8f5f3 50%,#efeae7 100%)}
+.hero h1{font-size:clamp(42px,6vw,72px);line-height:.94;margin:0 0 16px;letter-spacing:-.06em}
+.hero .subtitle{font-size:clamp(18px,2.2vw,24px);line-height:1.4;color:#42424b;max-width:700px;margin:0 auto}
+h2{font-size:clamp(32px,4vw,48px);line-height:1.1;margin:0 0 16px;letter-spacing:-.04em}
+.subtitle{font-size:clamp(16px,1.8vw,20px);line-height:1.5;color:var(--muted);margin-bottom:40px}
+.doc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:40px}
+.doc-card{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:28px;text-decoration:none;color:var(--ink);display:block;transition:all .3s;cursor:pointer;position:relative}
+.doc-card:hover{transform:translateY(-6px);box-shadow:0 28px 80px rgba(228,0,43,.18);border-color:var(--red)}
+.doc-card .icon{font-size:48px;margin-bottom:16px;display:block}
+.doc-card h3{font-size:20px;margin:0 0 12px;letter-spacing:-.02em}
+.doc-card p{font-size:15px;line-height:1.6;color:var(--muted);margin:0}
+.doc-card .download-label{margin-top:16px;font-size:14px;color:var(--red);font-weight:700;display:flex;align-items:center;gap:8px}
+.doc-card .badge{position:absolute;top:16px;right:16px;background:var(--red);color:#fff;padding:4px 12px;border-radius:12px;font-size:12px;font-weight:700;text-transform:uppercase}
+.category{margin-bottom:60px}
+.category h2{color:var(--red);margin-bottom:24px}
+footer{background:var(--ink);color:#fff;text-align:center;padding:40px}
+footer p{color:rgba(255,255,255,.7)}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <a href="index.html" class="brand">
+      <div class="brandmark">LC</div>
+      <span>Labour Check</span>
+    </a>
+    <a href="index.html" class="back-btn">← Volver a Inicio</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>📚 Documentación</h1>
+  <p class="subtitle">Repositorio completo de documentación técnica y de proyecto</p>
+</div>
+
+<section>
+  <div class="category">
+    <h2>📋 Documentos de Definición del Proyecto (DDP)</h2>
+    <p class="subtitle">Documentos técnicos de definición para cada canal de integración</p>
+    
+    <div class="doc-grid">
+      <a href="documentos/DDP_Labour_Check_General.docx" download class="doc-card">
+        <span class="icon">📄</span>
+        <h3>DDP Labour Check General</h3>
+        <p>Documento de definición general del proyecto Labour Check</p>
+        <div class="download-label">📥 Descargar DOCX</div>
+      </a>
+
+      <a href="documentos/DDP_Labour_Check_Punto_Venta.docx" download class="doc-card">
+        <span class="badge">Completo</span>
+        <span class="icon">🏪</span>
+        <h3>DDP Punto de Venta Físico</h3>
+        <p>Integración Labour Check en Contratación Web Consumo Punto de Venta</p>
+        <div class="download-label">📥 Descargar DOCX</div>
+      </a>
+
+      <a href="#" class="doc-card" style="opacity:0.6;cursor:not-allowed;pointer-events:none">
+        <span class="badge" style="background:#999">Próximamente</span>
+        <span class="icon">📞</span>
+        <h3>DDP Directo</h3>
+        <p>Integración Labour Check en canal Directo (en desarrollo)</p>
+        <div class="download-label" style="color:#999">⏳ En desarrollo</div>
+      </a>
+
+      <a href="#" class="doc-card" style="opacity:0.6;cursor:not-allowed;pointer-events:none">
+        <span class="badge" style="background:#999">Próximamente</span>
+        <span class="icon">🚗</span>
+        <h3>DDP Auto</h3>
+        <p>Integración Labour Check en canal Auto (en desarrollo)</p>
+        <div class="download-label" style="color:#999">⏳ En desarrollo</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>📊 Documentación Técnica</h2>
+    <p class="subtitle">Diccionarios de datos, modelos y diagramas de flujo</p>
+    
+    <div class="doc-grid">
+      <a href="documentos/Diccionario_Datos_Experian.xlsx" download class="doc-card">
+        <span class="icon">📖</span>
+        <h3>Diccionario de Datos Experian</h3>
+        <p>Diccionario completo de datos AAPP disponibles a través de Experian - Versión 2.2</p>
+        <div class="download-label">📥 Descargar XLSX</div>
+      </a>
+
+      <a href="documentos/Modellica_Labour_Check.xlsx" download class="doc-card">
+        <span class="icon">📈</span>
+        <h3>Modellica Labour Check</h3>
+        <p>Modelo de análisis, métricas y proyecciones del proyecto</p>
+        <div class="download-label">📥 Descargar XLSX</div>
+      </a>
+
+      <a href="documentos/Flujo_Labour_Check.pptx" download class="doc-card">
+        <span class="icon">🔄</span>
+        <h3>Flujos de Proceso</h3>
+        <p>Diagramas detallados del flujo de contratación con Labour Check</p>
+        <div class="download-label">📥 Descargar PPTX</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Labour Check · Santander Consumer Finance</p>
+</footer>
+</body>
+</html>
