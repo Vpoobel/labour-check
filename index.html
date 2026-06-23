@@ -261,114 +261,33 @@ footer p{color:rgba(255,255,255,.7);font-size:18px}
 </section>
 
 <section id="documentacion">
-  <h2>📚 Documentación Técnica</h2>
-  <p class="subtitle">Información técnica para integración y desarrollo</p>
+  <h2>📚 Documentación del Proyecto</h2>
+  <p class="subtitle">Documentos técnicos y de referencia</p>
   
-  <div class="card" style="margin-bottom:32px">
-    <h3>⚙️ Requisitos Técnicos</h3>
-    <ul>
-      <li><strong>Protocolo:</strong> HTTPS/REST API</li>
-      <li><strong>Autenticación:</strong> OAuth 2.0 + Token JWT</li>
-      <li><strong>Formato de datos:</strong> JSON</li>
-      <li><strong>Encoding:</strong> UTF-8</li>
-      <li><strong>Rate limiting:</strong> 100 requests/minuto</li>
-      <li><strong>Timeout:</strong> 30 segundos por request</li>
-      <li><strong>Entornos:</strong> Desarrollo, Pre-producción, Producción</li>
-    </ul>
-  </div>
+  <div class="grid">
+    <a href="documentos/DDP_Labour_Check.docx" download class="card" style="text-decoration:none;color:inherit;cursor:pointer;border:2px solid var(--line)">
+      <h3>� DDP - Documento de Definición del Proyecto</h3>
+      <p style="margin-top:12px;color:var(--muted)">Integración Labour Check en Contratación Web Consumo Punto de Venta Físico</p>
+      <p style="margin-top:16px;font-size:14px;color:var(--red);font-weight:700">📥 Descargar DOCX</p>
+    </a>
 
-  <div class="card" style="margin-bottom:32px">
-    <h3>🔌 Guía de Integración</h3>
-    
-    <h4 style="margin-top:24px;font-size:18px;color:var(--red)">1. Autenticación</h4>
-    <p>Obtener token de acceso mediante credenciales OAuth:</p>
-    <pre style="background:#f8f5f3;padding:16px;border-radius:12px;overflow-x:auto;font-size:14px;margin:12px 0"><code>POST /api/v1/auth/token
-Content-Type: application/json
+    <a href="documentos/Diccionario_Datos_Experian.xlsx" download class="card" style="text-decoration:none;color:inherit;cursor:pointer;border:2px solid var(--line)">
+      <h3>📊 Diccionario de Datos Experian</h3>
+      <p style="margin-top:12px;color:var(--muted)">Diccionario completo de datos AAPP disponibles a través de Experian</p>
+      <p style="margin-top:16px;font-size:14px;color:var(--red);font-weight:700">📥 Descargar XLSX</p>
+    </a>
 
-{
-  "client_id": "your_client_id",
-  "client_secret": "your_client_secret",
-  "grant_type": "client_credentials"
-}</code></pre>
+    <a href="documentos/Flujo_Labour_Check.pptx" download class="card" style="text-decoration:none;color:inherit;cursor:pointer;border:2px solid var(--line)">
+      <h3>🔄 Flujos de Proceso</h3>
+      <p style="margin-top:12px;color:var(--muted)">Diagramas detallados del flujo de contratación con Labour Check</p>
+      <p style="margin-top:16px;font-size:14px;color:var(--red);font-weight:700">📥 Descargar PPTX</p>
+    </a>
 
-    <h4 style="margin-top:24px;font-size:18px;color:var(--red)">2. Solicitar Datos del Cliente</h4>
-    <p>Realizar petición con consentimiento del cliente:</p>
-    <pre style="background:#f8f5f3;padding:16px;border-radius:12px;overflow-x:auto;font-size:14px;margin:12px 0"><code>POST /api/v1/labour-check/request
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "customer_id": "12345678A",
-  "data_types": ["vida_laboral", "modelo_100", "cirbe"],
-  "consent_id": "consent_uuid_123"
-}</code></pre>
-
-    <h4 style="margin-top:24px;font-size:18px;color:var(--red)">3. Consultar Estado</h4>
-    <p>Verificar el estado de la solicitud:</p>
-    <pre style="background:#f8f5f3;padding:16px;border-radius:12px;overflow-x:auto;font-size:14px;margin:12px 0"><code>GET /api/v1/labour-check/status/{request_id}
-Authorization: Bearer {token}</code></pre>
-
-    <h4 style="margin-top:24px;font-size:18px;color:var(--red)">4. Obtener Resultados</h4>
-    <p>Descargar los datos una vez procesados:</p>
-    <pre style="background:#f8f5f3;padding:16px;border-radius:12px;overflow-x:auto;font-size:14px;margin:12px 0"><code>GET /api/v1/labour-check/results/{request_id}
-Authorization: Bearer {token}</code></pre>
-  </div>
-
-  <div class="card">
-    <h3>📊 Diagrama de Flujo Técnico</h3>
-    <p style="margin-bottom:20px">Flujo completo de integración del módulo Labour Check:</p>
-    
-    <div style="background:#f8f5f3;padding:24px;border-radius:16px;font-family:monospace;font-size:13px;line-height:1.8">
-      <div style="margin-bottom:16px">
-        <strong style="color:var(--red)">1. INICIO</strong> → Sistema del cliente inicia proceso de onboarding
-      </div>
-      <div style="margin-bottom:16px;padding-left:20px">
-        ↓<br>
-        <strong style="color:var(--red)">2. AUTENTICACIÓN</strong> → Obtener token OAuth 2.0
-      </div>
-      <div style="margin-bottom:16px;padding-left:40px">
-        ↓<br>
-        <strong style="color:var(--red)">3. CONSENTIMIENTO</strong> → Cliente autoriza descarga de datos
-      </div>
-      <div style="margin-bottom:16px;padding-left:60px">
-        ↓<br>
-        <strong style="color:var(--red)">4. SOLICITUD API</strong> → POST /labour-check/request
-      </div>
-      <div style="margin-bottom:16px;padding-left:80px">
-        ↓<br>
-        <strong style="color:var(--red)">5. PROCESAMIENTO</strong> → Labour Check consulta TGSS/AEAT
-      </div>
-      <div style="margin-bottom:16px;padding-left:100px">
-        ↓<br>
-        <strong style="color:var(--red)">6. POLLING</strong> → GET /labour-check/status (cada 5s)
-      </div>
-      <div style="margin-bottom:16px;padding-left:120px">
-        ↓<br>
-        <strong style="color:var(--red)">7. DESCARGA</strong> → GET /labour-check/results
-      </div>
-      <div style="padding-left:140px">
-        ↓<br>
-        <strong style="color:var(--red)">8. INTEGRACIÓN</strong> → Datos disponibles en sistema cliente
-      </div>
-    </div>
-
-    <h4 style="margin-top:32px;font-size:18px;color:var(--red)">Estados Posibles</h4>
-    <ul style="margin-top:12px">
-      <li><strong>PENDING:</strong> Solicitud recibida, en cola de procesamiento</li>
-      <li><strong>PROCESSING:</strong> Consultando organismos oficiales</li>
-      <li><strong>COMPLETED:</strong> Datos disponibles para descarga</li>
-      <li><strong>FAILED:</strong> Error en la consulta (ver error_code)</li>
-      <li><strong>EXPIRED:</strong> Datos no descargados en tiempo límite (48h)</li>
-    </ul>
-
-    <h4 style="margin-top:32px;font-size:18px;color:var(--red)">Códigos de Error Comunes</h4>
-    <ul style="margin-top:12px">
-      <li><strong>401:</strong> Token inválido o expirado</li>
-      <li><strong>403:</strong> Consentimiento no válido o revocado</li>
-      <li><strong>404:</strong> Request ID no encontrado</li>
-      <li><strong>429:</strong> Rate limit excedido</li>
-      <li><strong>500:</strong> Error en organismos públicos (TGSS/AEAT no disponibles)</li>
-    </ul>
+    <a href="documentos/Modellica_Labour_Check.xlsx" download class="card" style="text-decoration:none;color:inherit;cursor:pointer;border:2px solid var(--line)">
+      <h3>📈 Modellica Labour Check</h3>
+      <p style="margin-top:12px;color:var(--muted)">Modelo de análisis y métricas del proyecto</p>
+      <p style="margin-top:16px;font-size:14px;color:var(--red);font-weight:700">📥 Descargar XLSX</p>
+    </a>
   </div>
 </section>
 
