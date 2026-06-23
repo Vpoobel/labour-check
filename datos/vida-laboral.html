@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vida Laboral · Labour Check</title>
+<style>
+:root{--red:#e4002b;--ink:#1e1e24;--muted:#62626f;--card:#fff;--line:#e8e2df;--shadow:0 20px 60px rgba(31,31,37,.12);--radius:28px;--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:var(--font);background:#fff;color:var(--ink);line-height:1.6}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:20px 0}
+.header-content{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.02em;font-size:18px;text-decoration:none;color:var(--ink)}
+.brandmark{width:40px;height:40px;border-radius:12px;background:var(--red);display:grid;place-items:center;color:#fff;font-weight:900;font-size:18px}
+.back-btn{display:flex;align-items:center;gap:8px;padding:10px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);font-weight:600;transition:all .2s}
+.back-btn:hover{border-color:var(--red);color:var(--red)}
+section{max-width:1200px;margin:0 auto;padding:80px 40px}
+.hero{text-align:center;padding:100px 40px 60px;background:radial-gradient(circle at 50% 0%,#fff 0,#f8f5f3 50%,#efeae7 100%)}
+.hero h1{font-size:clamp(42px,6vw,64px);line-height:.94;margin:0 0 16px;letter-spacing:-.06em}
+.hero .subtitle{font-size:clamp(16px,2vw,22px);line-height:1.4;color:#42424b;max-width:700px;margin:0 auto}
+h2{font-size:clamp(28px,3.5vw,42px);line-height:1.1;margin:0 0 20px;letter-spacing:-.04em}
+h3{font-size:clamp(20px,2.2vw,28px);margin:0 0 12px;letter-spacing:-.02em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);margin-bottom:24px}
+.card p{font-size:16px;line-height:1.6;color:#3a3a44;margin:10px 0}
+.card ul{margin:12px 0;padding-left:24px}
+.card li{margin:8px 0;font-size:16px;color:#3a3a44}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:24px}
+.info-box{background:linear-gradient(135deg,#fff7f8 0%,#fff 100%);border:1px solid var(--red);border-radius:16px;padding:24px;text-align:center}
+.info-box .number{font-size:48px;font-weight:800;color:var(--red);margin-bottom:8px}
+.info-box .label{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <a href="../index.html" class="brand">
+      <div class="brandmark">LC</div>
+      <span>Labour Check</span>
+    </a>
+    <a href="../index.html#descripcion" class="back-btn">← Volver a Datos</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>💼 Vida Laboral</h1>
+  <p class="subtitle">Informe completo de la trayectoria laboral del trabajador</p>
+</div>
+
+<section>
+  <div class="card">
+    <h3>Descripción</h3>
+    <p>El informe de Vida Laboral proporciona un historial completo de la trayectoria profesional del trabajador, incluyendo todos los períodos de alta en la Seguridad Social, empresas en las que ha trabajado, y tipos de contrato.</p>
+  </div>
+
+  <h2>Información Disponible</h2>
+  <div class="info-grid">
+    <div class="info-box">
+      <div class="number">100%</div>
+      <div class="label">Historial Completo</div>
+    </div>
+    <div class="info-box">
+      <div class="number">TGSS</div>
+      <div class="label">Fuente Oficial</div>
+    </div>
+    <div class="info-box">
+      <div class="number">Real Time</div>
+      <div class="label">Actualización</div>
+    </div>
+  </div>
+
+  <h2>Principales Datos Accesibles</h2>
+  <div class="card">
+    <h3>Información del Trabajador</h3>
+    <ul>
+      <li>Datos identificativos completos</li>
+      <li>Número de afiliación a la Seguridad Social</li>
+      <li>Situación actual (activo/inactivo)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Historial de Empleos</h3>
+    <ul>
+      <li>Empresas empleadoras (CIF y razón social)</li>
+      <li>Fechas de alta y baja en cada empleo</li>
+      <li>Tipo de contrato y régimen</li>
+      <li>Grupo de cotización</li>
+      <li>Coeficiente de parcialidad</li>
+      <li>Períodos de actividad</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Datos de Cotización</h3>
+    <ul>
+      <li>Bases de cotización por período</li>
+      <li>Días cotizados</li>
+      <li>Régimen de la Seguridad Social</li>
+      <li>Situaciones especiales (IT, desempleo, etc.)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Utilidad para Onboarding</h3>
+    <p>El acceso a la Vida Laboral permite:</p>
+    <ul>
+      <li><strong>Verificación de empleo:</strong> Confirmación de la situación laboral actual del cliente</li>
+      <li><strong>Análisis de estabilidad:</strong> Evaluación de la estabilidad laboral y antigüedad</li>
+      <li><strong>Validación de ingresos:</strong> Correlación con datos de nóminas y declaraciones</li>
+      <li><strong>Detección de fraude:</strong> Identificación de inconsistencias en la información proporcionada</li>
+      <li><strong>Scoring mejorado:</strong> Mejor evaluación del riesgo basada en historial laboral real</li>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>

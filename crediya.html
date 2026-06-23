@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CrediYa · Labour Check</title>
+<style>
+:root{--red:#e4002b;--ink:#1e1e24;--muted:#62626f;--bg:#f6f4f2;--card:#fff;--line:#e8e2df;--soft:#fff7f8;--shadow:0 20px 60px rgba(31,31,37,.12);--radius:28px;--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:var(--font);background:#fff;color:var(--ink);line-height:1.6;scroll-behavior:smooth}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:20px 0}
+.header-content{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.02em;font-size:18px;text-decoration:none;color:var(--ink)}
+.brandmark{width:40px;height:40px;border-radius:12px;background:var(--red);display:grid;place-items:center;color:#fff;font-weight:900;font-size:18px}
+.back-btn{display:flex;align-items:center;gap:8px;padding:10px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);font-weight:600;transition:all .2s}
+.back-btn:hover{border-color:var(--red);color:var(--red)}
+section{max-width:1200px;margin:0 auto;padding:80px 40px}
+.hero{text-align:center;padding:120px 40px 80px;background:radial-gradient(circle at 50% 0%,#fff 0,#f8f5f3 50%,#efeae7 100%)}
+.hero h1{font-size:clamp(48px,8vw,72px);line-height:.94;margin:0 0 24px;letter-spacing:-.06em}
+.hero .subtitle{font-size:clamp(18px,2.2vw,24px);line-height:1.4;color:#42424b;max-width:700px;margin:0 auto}
+h2{font-size:clamp(32px,4vw,48px);line-height:1.1;margin:0 0 24px;letter-spacing:-.04em}
+h3{font-size:clamp(24px,2.5vw,32px);margin:0 0 16px;letter-spacing:-.02em}
+.subtitle{font-size:clamp(16px,1.8vw,20px);line-height:1.5;color:var(--muted);margin-bottom:48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow);margin-bottom:32px}
+.card h3{font-size:clamp(20px,2vw,28px);margin:0 0 16px}
+.card p{font-size:clamp(15px,1.6vw,18px);line-height:1.6;color:#3a3a44;margin:12px 0}
+.card ul{margin:16px 0;padding-left:24px}
+.card li{margin:10px 0;font-size:clamp(15px,1.6vw,18px);color:#3a3a44}
+.status-badge{display:inline-block;padding:8px 16px;border-radius:12px;font-size:14px;font-weight:700;margin-bottom:16px}
+.status-gray{background:#e2e3e5;color:#383d41;border:1px solid #d6d8db}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:32px}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <a href="index.html" class="brand">
+      <div class="brandmark">LC</div>
+      <span>Labour Check</span>
+    </a>
+    <a href="index.html#onboardings" class="back-btn">← Volver a Onboardings</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>💳 CrediYa</h1>
+  <p class="subtitle">Integración de Labour Check en el onboarding de CrediYa</p>
+</div>
+
+<section>
+  <span class="status-badge status-gray">Pendiente de Planificación</span>
+  
+  <div class="card">
+    <h3>📋 Estado del Proyecto</h3>
+    <p><strong>DDP:</strong> No iniciado</p>
+    <p><strong>Fase actual:</strong> Pendiente de planificación</p>
+    <p><strong>Próximos pasos:</strong> Por definir</p>
+  </div>
+
+  <h2>Objetivos Futuros</h2>
+  <div class="card">
+    <ul>
+      <li>Integrar Labour Check en el flujo de contratación de CrediYa</li>
+      <li>Automatizar la verificación de datos laborales para productos de crédito</li>
+      <li>Mejorar la evaluación de riesgo con datos laborales verificados</li>
+      <li>Agilizar el proceso de aprobación de créditos</li>
+    </ul>
+  </div>
+
+  <h2>Contactos</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>💡 Innovación</h3>
+      <p><strong>Verónica Póo Belandia</strong><br>Consultas del proyecto</p>
+    </div>
+    <div class="card">
+      <h3>⚠️ Riesgos</h3>
+      <p><strong>Ana Pahissa</strong><br>Aspectos de riesgo</p>
+    </div>
+    <div class="card">
+      <h3>💻 Tecnología</h3>
+      <p><strong>Gustavo Morón</strong><br>Desarrollo técnico</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

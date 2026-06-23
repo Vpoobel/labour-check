@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modelo 100 (IRPF) · Labour Check</title>
+<style>
+:root{--red:#e4002b;--ink:#1e1e24;--muted:#62626f;--card:#fff;--line:#e8e2df;--shadow:0 20px 60px rgba(31,31,37,.12);--radius:28px;--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:var(--font);background:#fff;color:var(--ink);line-height:1.6}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:20px 0}
+.header-content{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.02em;font-size:18px;text-decoration:none;color:var(--ink)}
+.brandmark{width:40px;height:40px;border-radius:12px;background:var(--red);display:grid;place-items:center;color:#fff;font-weight:900;font-size:18px}
+.back-btn{display:flex;align-items:center;gap:8px;padding:10px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);font-weight:600;transition:all .2s}
+.back-btn:hover{border-color:var(--red);color:var(--red)}
+section{max-width:1200px;margin:0 auto;padding:80px 40px}
+.hero{text-align:center;padding:100px 40px 60px;background:radial-gradient(circle at 50% 0%,#fff 0,#f8f5f3 50%,#efeae7 100%)}
+.hero h1{font-size:clamp(42px,6vw,64px);line-height:.94;margin:0 0 16px;letter-spacing:-.06em}
+.hero .subtitle{font-size:clamp(16px,2vw,22px);line-height:1.4;color:#42424b;max-width:700px;margin:0 auto}
+h2{font-size:clamp(28px,3.5vw,42px);line-height:1.1;margin:0 0 20px;letter-spacing:-.04em}
+h3{font-size:clamp(20px,2.2vw,28px);margin:0 0 12px;letter-spacing:-.02em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);margin-bottom:24px}
+.card p{font-size:16px;line-height:1.6;color:#3a3a44;margin:10px 0}
+.card ul{margin:12px 0;padding-left:24px}
+.card li{margin:8px 0;font-size:16px;color:#3a3a44}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:24px}
+.info-box{background:linear-gradient(135deg,#fff7f8 0%,#fff 100%);border:1px solid var(--red);border-radius:16px;padding:24px;text-align:center}
+.info-box .number{font-size:48px;font-weight:800;color:var(--red);margin-bottom:8px}
+.info-box .label{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.data-table{width:100%;border-collapse:collapse;margin-top:20px;font-size:15px}
+.data-table th{background:var(--red);color:#fff;padding:12px;text-align:left;font-weight:700}
+.data-table td{padding:12px;border-bottom:1px solid var(--line)}
+.data-table tr:hover{background:#f8f5f3}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <a href="../index.html" class="brand">
+      <div class="brandmark">LC</div>
+      <span>Labour Check</span>
+    </a>
+    <a href="../index.html#descripcion" class="back-btn">← Volver a Datos</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>� Situación SS</h1>
+  <p class="subtitle">Estado actual de alta/baja en la Seguridad Social</p>
+</div>
+
+<section>
+  <div class="card">
+    <h3>Descripción</h3>
+    <p>La Situación en la Seguridad Social indica el estado actual del trabajador que recoge todos los ingresos y gastos del contribuyente durante el ejercicio fiscal. A través de Labour Check se puede acceder a información detallada de las declaraciones presentadas.</p>
+  </div>
+
+  <h2>Información Disponible</h2>
+  <div class="info-grid">
+    <div class="info-box">
+      <div class="number">2100+</div>
+      <div class="label">Campos de Datos</div>
+    </div>
+    <div class="info-box">
+      <div class="number">100%</div>
+      <div class="label">Automatizado</div>
+    </div>
+    <div class="info-box">
+      <div class="number">AEAT</div>
+      <div class="label">Fuente Oficial</div>
+    </div>
+  </div>
+
+  <h2>Principales Datos Accesibles</h2>
+  <div class="card">
+    <h3>Datos del Declarante</h3>
+    <ul>
+      <li>Datos identificativos (NIF, nombre, apellidos)</li>
+      <li>Domicilio fiscal</li>
+      <li>Comunidad autónoma</li>
+      <li>Fecha de fallecimiento (si aplica)</li>
+      <li>Información de cónyuge e hijos</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Datos Económicos</h3>
+    <ul>
+      <li>Rendimientos del trabajo</li>
+      <li>Rendimientos del capital mobiliario e inmobiliario</li>
+      <li>Rendimientos de actividades económicas</li>
+      <li>Ganancias y pérdidas patrimoniales</li>
+      <li>Base imponible y liquidable</li>
+      <li>Cuota íntegra, líquida y diferencial</li>
+      <li>Deducciones aplicadas</li>
+      <li>Resultado de la declaración (a ingresar/devolver)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Utilidad para Onboarding</h3>
+    <p>El acceso al Modelo 100 permite:</p>
+    <ul>
+      <li><strong>Verificación de ingresos:</strong> Validación automática de la capacidad económica del cliente</li>
+      <li><strong>Análisis de solvencia:</strong> Evaluación de la situación financiera real</li>
+      <li><strong>Reducción de fraude:</strong> Detección de inconsistencias en la información declarada</li>
+      <li><strong>Agilización del proceso:</strong> Eliminación de solicitud manual de documentación</li>
+    </ul>
+  </div>
+
+  <h2>Categorías de Información</h2>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Categoría</th>
+        <th>Descripción</th>
+        <th>Campos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Datos Identificativos</strong></td>
+        <td>Información personal del declarante y familia</td>
+        <td>~150 campos</td>
+      </tr>
+      <tr>
+        <td><strong>Rendimientos del Trabajo</strong></td>
+        <td>Ingresos por trabajo por cuenta ajena</td>
+        <td>~200 campos</td>
+      </tr>
+      <tr>
+        <td><strong>Rendimientos del Capital</strong></td>
+        <td>Ingresos por inversiones y propiedades</td>
+        <td>~300 campos</td>
+      </tr>
+      <tr>
+        <td><strong>Actividades Económicas</strong></td>
+        <td>Ingresos por actividades profesionales/empresariales</td>
+        <td>~400 campos</td>
+      </tr>
+      <tr>
+        <td><strong>Ganancias Patrimoniales</strong></td>
+        <td>Plusvalías y pérdidas por ventas de activos</td>
+        <td>~250 campos</td>
+      </tr>
+      <tr>
+        <td><strong>Liquidación</strong></td>
+        <td>Cálculo de cuotas y resultado final</td>
+        <td>~800 campos</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+</body>
+</html>
